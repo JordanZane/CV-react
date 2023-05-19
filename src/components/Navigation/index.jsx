@@ -6,11 +6,14 @@ const Navigation = () => {
   useEffect(() => {
     // Fonction pour vérifier la visibilité de la section au scroll
     const handleScroll = () => {
+      const topPage = document.getElementById('top-page');
       const skillsSection = document.getElementById('skills');
       const projectsSection = document.getElementById('projects');
       const contactSection = document.getElementById('contact');
 
-      if (isElementVisible(skillsSection)) {
+      if (isElementVisible(topPage)) {
+        setActiveLink('#top-page');
+      } else if (isElementVisible(skillsSection)) {
         setActiveLink('#skills');
       } else if (isElementVisible(projectsSection)) {
         setActiveLink('#projects');
@@ -44,36 +47,51 @@ const Navigation = () => {
   };
 
   return (
-    <nav>
-      <ul>
-        <li>
-          <a
-            href="#skills"
-            className={activeLink === '#skills' ? 'active' : ''}
-            onClick={(event) => handleClick(event, '#skills')}
-          >
-            Compétences
-          </a>
-        </li>
-        <li>
-          <a
-            href="#projects"
-            className={activeLink === '#projects' ? 'active' : ''}
-            onClick={(event) => handleClick(event, '#projects')}
-          >
-            Projets
-          </a>
-        </li>
-        <li>
-          <a
-            href="#contact"
-            className={activeLink === '#contact' ? 'active' : ''}
-            onClick={(event) => handleClick(event, '#contact')}
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
+    <nav className="nav">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <ul>
+              <li>
+                <a
+                  href="#top-page"
+                  className={activeLink === '#top-page' ? 'active' : ''}
+                  onClick={(event) => handleClick(event, '#top-page')}
+                >
+                  Accueil
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  className={activeLink === '#skills' ? 'active' : ''}
+                  onClick={(event) => handleClick(event, '#skills')}
+                >
+                  Compétences
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  className={activeLink === '#projects' ? 'active' : ''}
+                  onClick={(event) => handleClick(event, '#projects')}
+                >
+                  Projets
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className={activeLink === '#contact' ? 'active' : ''}
+                  onClick={(event) => handleClick(event, '#contact')}
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };

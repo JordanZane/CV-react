@@ -2,10 +2,13 @@ import React from 'react';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import Skills from './components/Skills';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
     <div className="App">
+      <Navigation />
+      <div id="top-page"></div>
       <Header />
       <main>
         <Banner />

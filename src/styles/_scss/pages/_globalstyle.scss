@@ -1,17 +1,9 @@
-html {
-  scroll-behavior: smooth;
-}
-
 .error-404 {
   padding: 70px 0 70px;
   p {
     font-size: 25px;
     font-weight: 700;
     line-height: 49px;
-
-    a {
-      color: cadetblue;
-    }
   }
 }
 
@@ -22,10 +14,6 @@ body {
   letter-spacing: 1px;
   @include respond-to('small') {
     font-size: 16px;
-  }
-  .title {
-    margin-top: 50px;
-    margin-bottom: 30px;
   }
 
   h1 {

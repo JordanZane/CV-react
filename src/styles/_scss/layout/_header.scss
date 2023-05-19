@@ -1,52 +1,7 @@
 header {
   height: 100vh;
   position: relative;
-  nav {
-    position: fixed;
-    z-index: 1;
-    right: 0;
-    background-color: $color-white;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    ul {
-      display: flex;
-      padding-left: 0;
-      margin-right: 16%;
-      li {
-        margin-right: 30px;
-        list-style-type: none;
-        &:last-child {
-          margin-right: 0;
-        }
-        a {
-          color: $color-black;
-          text-decoration: unset;
-          font-size: 18px;
-          font-weight: bold;
-          @include transition(0.3s);
-          &:hover {
-            color: $color-blue-1;
-          }
-          &.active {
-            color: $color-blue-1;
-            position: relative;
-            &::after {
-              content: '';
-              position: absolute;
-              bottom: -6px;
-              left: 50%;
-              transform: translate(-50%, 0);
-              width: 0;
-              height: 3px;
-              background-color: $color-blue-1;
-              animation: growHor 0.3s linear forwards;
-            }
-          }
-        }
-      }
-    }
-  }
+
   .header-content {
     position: absolute;
     top: 50%;
@@ -65,5 +20,52 @@ header {
   }
   100% {
     width: 85%;
+  }
+}
+
+nav.nav {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  background-color: $color-white;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0;
+    li {
+      margin-right: 30px;
+      list-style-type: none;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        color: $color-black;
+        text-decoration: unset;
+        font-size: 18px;
+        font-weight: bold;
+        @include transition(0.3s);
+        &:hover {
+          color: $color-blue-1;
+        }
+        &.active {
+          color: $color-blue-1;
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 0;
+            height: 3px;
+            background-color: $color-blue-1;
+            animation: growHor 0.3s linear forwards;
+          }
+        }
+      }
+    }
   }
 }

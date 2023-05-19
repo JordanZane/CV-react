@@ -1,14 +1,11 @@
 import React from 'react';
-import Navigation from '../Navigation';
 
 const Header = () => {
   return (
     <header>
       <div className="container">
         <div className="row">
-          <div className="col-lg-12">
-            <Navigation />
-          </div>
+          <div className="col-lg-12"></div>
         </div>
         <div className="row">
           <div className="col-lg-6">

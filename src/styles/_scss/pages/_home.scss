@@ -10,9 +10,10 @@
     justify-content: space-between;
     align-items: center;
     p {
-      font-size: 24px;
+      font-size: 26px;
       line-height: 32px;
       color: $color-white;
+      font-weight: bold;
     }
     .btn-style {
       background-color: $color-white;
@@ -36,8 +37,8 @@
     @include transition(0.5s);
 
     &:hover {
-      border-radius: 13px;
-      background: $color-white;
+      border-radius: 18px;
+      background: linear-gradient(transparent, transparent);
       h3,
       li,
       i {
