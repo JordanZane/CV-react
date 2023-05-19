@@ -26,6 +26,7 @@ const Projects = () => {
               <ProjectsInsert key={index} projet={projet} />
             ))}
           </ul>
+          <div className="btn-container"></div>
         </div>
       </div>
     </section>

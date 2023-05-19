@@ -1,23 +1,21 @@
 import React from 'react';
-import Header from './components/Header';
-import Banner from './components/Banner';
-import Skills from './components/Skills';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import Projects from './components/Projects';
+import Home from './components/Home';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <Navigation />
+    <BrowserRouter>
       <div id="top-page"></div>
+
+      <Navigation />
       <Header />
-      <main>
-        <Banner />
-        <Skills />
-        <Projects />
-        <div id="contact"></div>
-      </main>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="*" element={<Home />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
