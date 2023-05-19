@@ -3,6 +3,15 @@
 $color-black: #000000;
 $color-white: rgb(255, 255, 255);
 $color-blue-1: #1193c8;
+$color-blue-2: #3ab9eb;
+$color-blue-3: #8ecee9;
+
+$bg-gradient: linear-gradient(
+  160deg,
+  $color-blue-1,
+  $color-blue-2,
+  $color-blue-3
+);
 
 $shadow-1: 0px 0px 5px rgba(0, 0, 0, 1);
 

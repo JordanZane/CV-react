@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .error-404 {
   padding: 70px 0 70px;
   p {
@@ -41,11 +45,22 @@ body {
   }
 
   h2 {
-    font-family: $font2;
+    font-family: $font1;
     font-size: 32px;
     font-weight: 700;
     line-height: 43px;
     padding: 32px 0 25px;
+    color: $color-blue-1;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 75px;
+      height: 3px;
+      background-color: $color-blue-1;
+    }
     @include respond-to('medium') {
       font-size: 25px;
     }
@@ -116,7 +131,7 @@ body {
 }
 
 .section {
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 .btn-style {

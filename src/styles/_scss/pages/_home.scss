@@ -1,9 +1,9 @@
 .banner-section {
-  background: linear-gradient(160deg, $color-blue-1, #3ab9eb, #8ecee9);
+  background: $bg-gradient;
   padding: 50px 0;
   position: relative;
   &::after {
-    @include triangle($color-blue-1);
+    @include triangle($color-blue-2);
   }
   .banner-content {
     display: flex;

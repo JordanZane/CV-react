@@ -40,6 +40,7 @@ const Navigation = () => {
   const handleClick = (event, link) => {
     event.preventDefault();
     setActiveLink(link);
+    document.querySelector(link).scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
