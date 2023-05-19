@@ -1,0 +1,20 @@
+header {
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+      display: flex;
+      li {
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          &.active {
+            color: $color-blue-1;
+          }
+        }
+      }
+    }
+  }
+}
