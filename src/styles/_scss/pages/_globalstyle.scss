@@ -46,12 +46,13 @@ body {
 
   h2 {
     font-family: $font1;
-    font-size: 32px;
+    font-size: 43px;
     font-weight: 700;
-    line-height: 43px;
+    line-height: 52px;
     padding: 32px 0 25px;
     color: $color-blue-1;
     position: relative;
+    margin-bottom: 50px;
     &::after {
       content: '';
       position: absolute;
@@ -131,7 +132,7 @@ body {
 }
 
 .section {
-  margin-bottom: 200px;
+  margin-bottom: 340px;
 }
 
 .btn-style {

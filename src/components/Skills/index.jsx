@@ -9,7 +9,9 @@ const Skills = () => {
         </div>
         <div className="col-lg-4">
           <div className="skills-content">
-            <h3>Front-end</h3>
+            <h3>
+              Front-end <i className="fa-solid fa-code"></i>
+            </h3>
             <ul>
               <li>Html5/Css3</li>
               <li>Sass</li>
@@ -21,25 +23,28 @@ const Skills = () => {
         </div>
         <div className="col-lg-4">
           <div className="skills-content">
-            <h3>Outils</h3>
+            <h3>
+              Outils <i className="fa-solid fa-gear"></i>
+            </h3>
             <ul>
-              <li>Html5/Css3</li>
-              <li>Sass</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Bootstrap</li>
+              <li>WordPress</li>
+              <li>PrestaShop</li>
+              <li>Visual Studio Code</li>
+              <li>Git</li>
+              <li>Npm</li>
             </ul>
           </div>
         </div>
         <div className="col-lg-4">
           <div className="skills-content">
-            <h3>Autres</h3>
+            <h3>
+              Autres <i className="fa-solid fa-pen"></i>
+            </h3>
             <ul>
-              <li>Html5/Css3</li>
-              <li>Sass</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Bootstrap</li>
+              <li>Photoshop</li>
+              <li>Adobe XD</li>
+              <li>Bash shell</li>
+              <li>Seo</li>
             </ul>
           </div>
         </div>

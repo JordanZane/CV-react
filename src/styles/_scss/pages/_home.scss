@@ -25,3 +25,47 @@
     }
   }
 }
+
+.skills-section {
+  .skills-content {
+    background: $bg-gradient;
+    text-align: center;
+    padding: 20px;
+    min-height: 244px;
+    box-shadow: 3px 4px 6px $color-blue-1;
+    @include transition(0.5s);
+
+    &:hover {
+      border-radius: 13px;
+      background: $color-white;
+      h3,
+      li,
+      i {
+        color: $color-blue-1;
+      }
+    }
+    h3 {
+      padding: 0;
+      color: $color-white;
+      position: relative;
+      @include transition(0.5s);
+
+      i {
+        position: absolute;
+        right: 0;
+        color: $color-white;
+        @include transition(0.5s);
+      }
+    }
+    ul {
+      padding-left: 0;
+      margin-bottom: 0;
+      li {
+        color: $color-white;
+        list-style-type: none;
+        font-weight: bold;
+        @include transition(0.5s);
+      }
+    }
+  }
+}
