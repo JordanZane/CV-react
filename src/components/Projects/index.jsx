@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import ProjectsInsert from '../ProjectsInsert';
 
@@ -26,7 +27,11 @@ const Projects = () => {
               <ProjectsInsert key={index} projet={projet} />
             ))}
           </ul>
-          <div className="btn-container"></div>
+          <div className="btn-container">
+            <Link className="btn-style" to="/projects">
+              Tous mes projets
+            </Link>
+          </div>
         </div>
       </div>
     </section>
