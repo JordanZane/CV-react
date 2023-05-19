@@ -71,4 +71,65 @@
       }
     }
   }
+  .front-end-skills {
+    &:hover {
+      h3 i {
+        animation: rotate3DY 0.6s linear infinite alternate forwards;
+      }
+    }
+  }
+  .tools-skills {
+    &:hover {
+      h3 i {
+        animation: rotate360 1.5s linear infinite forwards;
+      }
+    }
+  }
+
+  .others-skills {
+    &:hover {
+      h3 i {
+        animation: writing 1.5s linear infinite alternate forwards;
+      }
+    }
+  }
+}
+
+@keyframes rotate3DY {
+  0% {
+    transform: rotate3d(0);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes writing {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
 }

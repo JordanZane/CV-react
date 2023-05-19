@@ -8,7 +8,7 @@ const Skills = () => {
           <h2>Compétences</h2>
         </div>
         <div className="col-lg-4">
-          <div className="skills-content">
+          <div className="skills-content front-end-skills">
             <h3>
               Front-end <i className="fa-solid fa-code"></i>
             </h3>
@@ -22,7 +22,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="col-lg-4">
-          <div className="skills-content">
+          <div className="skills-content tools-skills">
             <h3>
               Outils <i className="fa-solid fa-gear"></i>
             </h3>
@@ -36,7 +36,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="col-lg-4">
-          <div className="skills-content">
+          <div className="skills-content others-skills">
             <h3>
               Autres <i className="fa-solid fa-pen"></i>
             </h3>
