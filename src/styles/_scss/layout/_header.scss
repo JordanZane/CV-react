@@ -1,7 +1,9 @@
 header {
+  height: 100vh;
+  position: relative;
   nav {
-    display: flex;
-    justify-content: flex-end;
+    position: fixed;
+    right: 10%;
     ul {
       display: flex;
       padding-left: 0;
@@ -39,9 +41,14 @@ header {
       }
     }
   }
-  h1 {
-    span {
-      color: $color-blue-1;
+  .header-content {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    h1 {
+      span {
+        color: $color-blue-1;
+      }
     }
   }
 }

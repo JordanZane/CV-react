@@ -1,0 +1,12 @@
+.banner-section {
+  background-color: $color-blue-1;
+  padding: 50px 0;
+  .banner-content {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 24px;
+      color: $color-white;
+    }
+  }
+}
