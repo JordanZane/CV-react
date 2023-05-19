@@ -11,8 +11,8 @@ const Banner = () => {
                 Je suis un développeur web déterminé <br />
                 ayant une grande soif d'apprendre
               </p>
-              <a className="btn-style" href="#">
-                CV
+              <a href="#projects" className="btn-style">
+                Mes projets
               </a>
             </div>
           </div>
