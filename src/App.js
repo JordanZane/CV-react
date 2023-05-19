@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import Skills from './components/Skills';
 import Navigation from './components/Navigation';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <main>
         <Banner />
         <Skills />
-        <div id="projects"></div>
+        <Projects />
         <div id="contact"></div>
       </main>
     </div>
