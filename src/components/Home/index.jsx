@@ -11,7 +11,6 @@ import TopLink from '../TopLink';
 const Home = () => {
   return (
     <main>
-      <div id="top-page"></div>
       <Navigation />
       <AsideLinks />
       <TopLink />

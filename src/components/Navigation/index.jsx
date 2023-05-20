@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const Navigation = () => {
-  const [activeLink, setActiveLink] = useState('');
+  const [activeLink, setActiveLink] = useState('#top-page');
 
   useEffect(() => {
     // Fonction pour vérifier la visibilité de la section au scroll
@@ -11,25 +11,29 @@ const Navigation = () => {
       const projectsSection = document.getElementById('projects');
       const contactSection = document.getElementById('contact');
 
-      if (isElementVisible(topPage)) {
-        setActiveLink('#top-page');
-      } else if (isElementVisible(skillsSection)) {
-        setActiveLink('#skills');
-      } else if (isElementVisible(projectsSection)) {
-        setActiveLink('#projects');
-      } else if (isElementVisible(contactSection)) {
-        setActiveLink('#contact');
-      }
-    };
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+      const sections = [
+        { id: '#top-page', element: topPage },
+        { id: '#skills', element: skillsSection },
+        { id: '#projects', element: projectsSection },
+        { id: '#contact', element: contactSection },
+      ];
 
-    // Vérifie la visibilité de l'élément dans la fenêtre
-    const isElementVisible = (element) => {
-      const rect = element.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight)
-      );
+      let maxVisibleHeight = 0;
+      let activeLinkId = '';
+
+      sections.forEach((section) => {
+        const rect = section.element.getBoundingClientRect();
+        const visibleHeight =
+          Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
+        if (visibleHeight > maxVisibleHeight) {
+          maxVisibleHeight = visibleHeight;
+          activeLinkId = section.id;
+        }
+      });
+
+      setActiveLink(activeLinkId);
     };
 
     // Ajoute un écouteur d'événement pour le scroll

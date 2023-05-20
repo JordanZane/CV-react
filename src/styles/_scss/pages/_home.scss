@@ -51,6 +51,7 @@ main {
       color: $color-black;
       padding: 8px 46px;
       &:hover {
+        background: unset;
         background-color: $color-black;
         color: $color-white;
       }
@@ -205,7 +206,7 @@ main {
               margin-right: 0;
             }
             &:hover {
-              background-color: $color-blue-1;
+              background: $bg-gradient;
               border-radius: 18px;
             }
           }

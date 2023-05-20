@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header>
+    <header id="top-page">
       <div className="container">
         <div className="row">
           <div className="col-lg-12"></div>
