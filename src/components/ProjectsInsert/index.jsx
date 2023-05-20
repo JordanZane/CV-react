@@ -1,5 +1,8 @@
 import React from 'react';
-import lalojaImage from '../../assets/images/laloja.jpg';
+import lalojaImage from '../../assets/images/projects/laloja.jpg';
+import fermePetellesImage from '../../assets/images/projects/fermedespetelles.jpg';
+import centreTherapieManuelle from '../../assets/images/projects/centretherapiemanuelle.jpg';
+import bobsBurgerWorld from '../../assets/images/projects/bobsburgerworld.jpg';
 
 const ProjectsInsert = () => {
   return (
@@ -11,89 +14,150 @@ const ProjectsInsert = () => {
         <div className="infos-container">
           <h4>La Loja</h4>
           <h5>
-            Site e-commerce. Réalisé sur
-            <strong> Prestashop</strong>
+            Projet professionnel - Réalisé chez :{' '}
+            <a
+              href="https://www.intermediatic.com/fr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Intermediatic
+            </a>
           </h5>
           <p>
-            Mon rôle : Configuration du back-office, recherche & installation
-            des modules. Intégration de la maquette
+            <strong>Site e-commerce - </strong>
+            Réalisé sur
+            <strong> Prestashop</strong>
           </p>
           <p>
-            Technologies : <span>Prestashop</span>
-            <span>Sass</span>
+            <strong>Mon rôle : </strong>Configuration du back-office, recherche
+            & installation des modules. Intégration de la maquette. Traitement &
+            optimisation des images
           </p>
-          <a target="_blank" rel="noreferrer" href="https://laloja.be/">
+          <p className="technologies">
+            <strong>Technologies :</strong> <span>Prestashop</span>
+            <span>Sass</span>
+            <span>Photoshop</span>
+          </p>
+          <a
+            className="btn-style"
+            target="_blank"
+            rel="noreferrer"
+            href="https://laloja.be/"
+          >
             Visiter le site
           </a>
         </div>
       </li>
       <li className="project-even">
         <div className="infos-container">
-          <h4>La Loja</h4>
+          <h4>Ferme des Pételles</h4>
           <h5>
-            Site e-commerce Home-Store & Epicerie fine. Réalisé sur
-            <strong> Prestashop</strong>
+            Projet professionnel - Réalisé chez :{' '}
+            <a
+              href="https://www.intermediatic.com/fr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Intermediatic
+            </a>
           </h5>
           <p>
-            Mon rôle : Configuration du back-office, recherche & installation
-            des modules. Intégration de la maquette
+            <strong>Site vitrine - </strong>
+            Réalisé sur
+            <strong> Wordpress</strong>
           </p>
           <p>
-            Technologies : <span>Prestashop</span>
-            <span>Sass</span>
+            <strong>Mon rôle : </strong>Configuration du back-office, recherche
+            & installation des modules. Intégration de la maquette. Traitement &
+            optimisation des images
           </p>
-          <a target="_blank" rel="noreferrer" href="https://laloja.be/">
+          <p className="technologies">
+            <strong>Technologies :</strong> <span>Wordpress</span>
+            <span>Sass</span>
+            <span>Photoshop</span>
+          </p>
+          <a
+            className="btn-style"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.fermedespetelles.be/"
+          >
             Visiter le site
           </a>
         </div>
         <div className="img-container">
-          <img src={lalojaImage} alt="La Loja" />
+          <img src={fermePetellesImage} alt="Ferme des Pételles" />
         </div>
       </li>
       <li className="project-odd">
         <div className="img-container">
-          <img src={lalojaImage} alt="La Loja" />
+          <img src={centreTherapieManuelle} alt="Centre de Therapie Manuelle" />
         </div>
         <div className="infos-container">
-          <h4>La Loja</h4>
+          <h4>Centre de Thérapie Manuelle</h4>
           <h5>
-            Site e-commerce Home-Store & Epicerie fine. Réalisé sur
-            <strong> Prestashop</strong>
+            Projet professionnel - Réalisé chez :{' '}
+            <a
+              href="https://www.intermediatic.com/fr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Intermediatic
+            </a>
           </h5>
           <p>
-            Mon rôle : Configuration du back-office, recherche & installation
-            des modules. Intégration de la maquette
+            <strong>Site vitrine - </strong>
+            Réalisé sur
+            <strong> CMS d'entreprise</strong>
           </p>
           <p>
-            Technologies : <span>Prestashop</span>
-            <span>Sass</span>
+            <strong>Mon rôle : </strong>Configuration des modules. Intégration
+            de la maquette. Traitement & optimisation des images
           </p>
-          <a target="_blank" rel="noreferrer" href="https://laloja.be/">
+          <p className="technologies">
+            <strong>Technologies :</strong> <span>Html5</span>
+            <span>Sass</span>
+            <span>BootStrap</span>
+            <span>Photoshop</span>
+          </p>
+          <a
+            className="btn-style"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.centredetherapiemanuelle.lu/fr/accueil"
+          >
             Visiter le site
           </a>
         </div>
       </li>
       <li className="project-even">
         <div className="infos-container">
-          <h4>La Loja</h4>
-          <h5>
-            Site e-commerce Home-Store & Epicerie fine. Réalisé sur
-            <strong> Prestashop</strong>
-          </h5>
+          <h4>Bob's Burger World</h4>
+          <h5>Projet personnel</h5>
           <p>
-            Mon rôle : Configuration du back-office, recherche & installation
-            des modules. Intégration de la maquette
+            <strong>
+              Site d'affichage des informations d'une série télévisée Américaine
+              via une API
+            </strong>
           </p>
-          <p>
-            Technologies : <span>Prestashop</span>
+
+          <p className="technologies">
+            <strong>Technologies :</strong> <span>Html5</span>
             <span>Sass</span>
+            <span>JavaScript</span>
+            <span>ReactJs</span>
           </p>
-          <a target="_blank" rel="noreferrer" href="https://laloja.be/">
+          <a
+            className="btn-style"
+            target="_blank"
+            rel="noreferrer"
+            href="https://bobsburgerworld.jordanzanetti.fr/"
+          >
             Visiter le site
           </a>
         </div>
         <div className="img-container">
-          <img src={lalojaImage} alt="La Loja" />
+          <img src={bobsBurgerWorld} alt="Bob's Burger World" />
         </div>
       </li>
     </ul>
