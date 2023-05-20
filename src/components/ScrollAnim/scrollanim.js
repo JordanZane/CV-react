@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const ScrollAnim = () => {
   useEffect(() => {
@@ -16,7 +16,7 @@ const ScrollAnim = () => {
     hiddenElements.forEach((element) => observer.observe(element));
   }, []);
 
-  return <div>{/* Vos composants React */}</div>;
+  return;
 };
 
 export default ScrollAnim;

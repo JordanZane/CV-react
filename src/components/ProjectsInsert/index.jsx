@@ -164,14 +164,24 @@ const ProjectsInsert = () => {
             <span>JavaScript</span>
             <span>ReactJs</span>
           </p>
-          <a
-            className="btn-style"
-            target="_blank"
-            rel="noreferrer"
-            href="https://bobsburgerworld.jordanzanetti.fr/"
-          >
-            Visiter le site
-          </a>
+          <div className="btn-container">
+            <a
+              className="btn-style"
+              target="_blank"
+              rel="noreferrer"
+              href="https://bobsburgerworld.jordanzanetti.fr/"
+            >
+              Visiter le site
+            </a>
+            <a
+              className="btn-style"
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/JordanZane/Bobs-Burger-World"
+            >
+              Voir le code
+            </a>
+          </div>
         </div>
         <div className="img-container">
           <img src={bobsBurgerWorld} alt="Bob's Burger World" />

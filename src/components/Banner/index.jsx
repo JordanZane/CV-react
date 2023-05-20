@@ -1,4 +1,5 @@
 import React from 'react';
+import CvPdf from '../../assets/files/cv-zanetti-jordan.pdf';
 
 const Banner = () => {
   return (
@@ -11,8 +12,8 @@ const Banner = () => {
                 Je suis un développeur web déterminé <br />
                 ayant une grande soif d'apprendre
               </p>
-              <a href="#projects" className="btn-style">
-                Mes projets
+              <a href={CvPdf} download className="btn-style">
+                Mon CV
               </a>
             </div>
           </div>

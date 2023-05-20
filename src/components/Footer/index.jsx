@@ -6,11 +6,11 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className="contact-container hidden">
-              <h2>Contact</h2>
+            <div className="contact-container">
+              <h2 className="hidden">Contact</h2>
               <div className="row">
                 <div className="offset-lg-3 col-lg-2 col-sm-12">
-                  <div className="contact-content">
+                  <div className="contact-content hidden">
                     <a href="tel:0666179121">
                       {' '}
                       <i className="fa-solid fa-phone"></i>
@@ -19,7 +19,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="col-lg-2 col-sm-12">
-                  <div className="contact-content">
+                  <div className="contact-content hidden">
                     <a href="mailto:jzanetti1@outlook.fr">
                       <i className="fa-sharp fa-solid fa-envelope"></i>{' '}
                       jzanetti1@outlook.fr
@@ -27,7 +27,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="col-lg-2 col-sm-12">
-                  <div className="contact-content">
+                  <div className="contact-content hidden">
                     <a
                       href="https://www.linkedin.com/in/jordan-zanetti-044ab2174/"
                       target="_blank"

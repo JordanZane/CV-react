@@ -167,7 +167,7 @@ body {
 .hidden {
   opacity: 0;
   filter: blur(5px);
-  @include transition(1.2s);
+  @include transition(1s);
 }
 
 .show {
