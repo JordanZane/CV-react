@@ -215,13 +215,23 @@ main {
         }
       }
       &.project-odd {
+        box-shadow: 4px 4px 6px #adadad;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
         .infos-container {
           padding: 10px 30px 30px 50px;
+          border-top-right-radius: 18px;
+          border-bottom-right-radius: 18px;
         }
       }
       &.project-even {
+        box-shadow: -4px 4px 6px #adadad;
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
         .infos-container {
           padding: 10px 50px 30px 30px;
+          border-top-left-radius: 18px;
+          border-bottom-left-radius: 18px;
         }
       }
       .img-container {
