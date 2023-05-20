@@ -11,6 +11,13 @@ header {
         color: $color-blue-1;
       }
     }
+    a {
+      transform: translate(-50px, 0);
+      display: inline-block;
+      &.show {
+        transform: translate(0, 0);
+      }
+    }
   }
 }
 

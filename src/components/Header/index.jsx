@@ -10,11 +10,11 @@ const Header = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="header-content">
-              <h1>
+              <h1 className="hidden">
                 Zanetti Jordan <br />
                 <span>Développeur web front-end</span>
               </h1>
-              <a className="btn-style" href="#contact">
+              <a className="btn-style hidden" href="#contact">
                 Contactez moi
               </a>
             </div>

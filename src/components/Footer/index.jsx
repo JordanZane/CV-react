@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className="contact-container">
+            <div className="contact-container hidden">
               <h2>Contact</h2>
               <div className="row">
                 <div className="offset-lg-3 col-lg-2 col-sm-12">

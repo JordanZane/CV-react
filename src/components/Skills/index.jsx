@@ -5,10 +5,10 @@ const Skills = () => {
     <section id="skills" className="section container skills-section">
       <div className="row">
         <div className="col-lg-12">
-          <h2>Compétences</h2>
+          <h2 className="hidden">Compétences</h2>
         </div>
         <div className="col-lg-4">
-          <div className="skills-content front-end-skills">
+          <div className="skills-content front-end-skills hidden">
             <h3>
               Front-end <i className="fa-solid fa-code"></i>
             </h3>
@@ -22,7 +22,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="col-lg-4">
-          <div className="skills-content tools-skills">
+          <div className="skills-content tools-skills hidden">
             <h3>
               Outils <i className="fa-solid fa-gear"></i>
             </h3>
@@ -36,7 +36,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="col-lg-4">
-          <div className="skills-content others-skills">
+          <div className="skills-content others-skills hidden">
             <h3>
               Autres <i className="fa-solid fa-pen"></i>
             </h3>

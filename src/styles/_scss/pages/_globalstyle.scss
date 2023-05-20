@@ -23,7 +23,10 @@ body {
     line-height: 75px;
     position: relative;
     padding: 40px 0;
-
+    transform: translate(0, -50px);
+    &.show {
+      transform: translate(0, 0);
+    }
     @include respond-to('medium') {
       font-size: 30px;
     }
@@ -155,4 +158,15 @@ body {
     color: $color-white;
     font-size: 22px;
   }
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  @include transition(0.8s);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
 }

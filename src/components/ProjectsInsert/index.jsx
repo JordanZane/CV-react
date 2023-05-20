@@ -7,7 +7,7 @@ import bobsBurgerWorld from '../../assets/images/projects/bobsburgerworld.jpg';
 const ProjectsInsert = () => {
   return (
     <ul className="projects-container">
-      <li className="project-odd">
+      <li className="project-odd hidden">
         <div className="img-container">
           <img src={lalojaImage} alt="La Loja" />
           <a target="_blank" rel="noreferrer" href="https://laloja.be/">
@@ -51,7 +51,7 @@ const ProjectsInsert = () => {
           </a>
         </div>
       </li>
-      <li className="project-even">
+      <li className="project-even hidden">
         <div className="infos-container">
           <h4>Ferme des Pételles</h4>
           <h5>
@@ -99,7 +99,7 @@ const ProjectsInsert = () => {
           </a>
         </div>
       </li>
-      <li className="project-odd">
+      <li className="project-odd hidden">
         <div className="img-container">
           <img src={centreTherapieManuelle} alt="Centre de Therapie Manuelle" />
           <a
@@ -147,7 +147,7 @@ const ProjectsInsert = () => {
           </a>
         </div>
       </li>
-      <li className="project-even">
+      <li className="project-even hidden">
         <div className="infos-container">
           <h4>Bob's Burger World</h4>
           <h5>Projet personnel</h5>
