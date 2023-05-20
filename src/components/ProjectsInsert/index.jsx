@@ -10,6 +10,9 @@ const ProjectsInsert = () => {
       <li className="project-odd">
         <div className="img-container">
           <img src={lalojaImage} alt="La Loja" />
+          <a target="_blank" rel="noreferrer" href="https://laloja.be/">
+            <i className="fa-solid fa-eye"></i>
+          </a>
         </div>
         <div className="infos-container">
           <h4>La Loja</h4>
@@ -87,11 +90,25 @@ const ProjectsInsert = () => {
         </div>
         <div className="img-container">
           <img src={fermePetellesImage} alt="Ferme des Pételles" />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://fermedespetelles.be/"
+          >
+            <i className="fa-solid fa-eye"></i>
+          </a>
         </div>
       </li>
       <li className="project-odd">
         <div className="img-container">
           <img src={centreTherapieManuelle} alt="Centre de Therapie Manuelle" />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.centredetherapiemanuelle.lu/fr"
+          >
+            <i className="fa-solid fa-eye"></i>
+          </a>
         </div>
         <div className="infos-container">
           <h4>Centre de Thérapie Manuelle</h4>
@@ -124,7 +141,7 @@ const ProjectsInsert = () => {
             className="btn-style"
             target="_blank"
             rel="noreferrer"
-            href="https://www.centredetherapiemanuelle.lu/fr/accueil"
+            href="https://www.centredetherapiemanuelle.lu/fr"
           >
             Visiter le site
           </a>
@@ -158,6 +175,13 @@ const ProjectsInsert = () => {
         </div>
         <div className="img-container">
           <img src={bobsBurgerWorld} alt="Bob's Burger World" />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://bobsburgerworld.jordanzanetti.fr/"
+          >
+            <i className="fa-solid fa-eye"></i>
+          </a>
         </div>
       </li>
     </ul>

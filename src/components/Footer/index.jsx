@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="contact-container">
               <h2>Contact</h2>
               <div className="row">
-                <div className="col-lg-4">
+                <div className="offset-lg-3 col-lg-2 col-sm-12">
                   <div className="contact-content">
                     <a href="tel:0666179121">
                       {' '}
@@ -18,7 +18,7 @@ const Footer = () => {
                     </a>
                   </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-2 col-sm-12">
                   <div className="contact-content">
                     <a href="mailto:jzanetti1@outlook.fr">
                       <i className="fa-sharp fa-solid fa-envelope"></i>{' '}
@@ -26,7 +26,7 @@ const Footer = () => {
                     </a>
                   </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-2 col-sm-12">
                   <div className="contact-content">
                     <a
                       href="https://www.linkedin.com/in/jordan-zanetti-044ab2174/"

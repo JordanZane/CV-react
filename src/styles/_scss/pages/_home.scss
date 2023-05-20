@@ -195,7 +195,6 @@
       }
       .img-container {
         position: relative;
-
         &:hover {
           &::after {
             content: '';
@@ -206,6 +205,20 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.219);
           }
+          i {
+            opacity: 1;
+          }
+        }
+        i {
+          z-index: 1;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 46px;
+          color: $color-white;
+          opacity: 0;
+          @include transition(0.3s);
         }
       }
     }
