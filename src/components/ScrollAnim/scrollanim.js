@@ -14,9 +14,21 @@ const ScrollAnim = () => {
 
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((element) => observer.observe(element));
+
+    const handlePopstate = () => {
+      // Recharge la page entièrement
+      window.location.reload();
+    };
+
+    window.addEventListener('popstate', handlePopstate);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('popstate', handlePopstate);
+    };
   }, []);
 
-  return;
+  return null;
 };
 
 export default ScrollAnim;

@@ -9,20 +9,27 @@ main {
       display: flex;
       flex-direction: column;
       padding-left: 0;
-      border-top-left-radius: 18px;
-      border-bottom-left-radius: 18px;
+
       li {
         list-style-type: none;
-        padding: 6px 12px;
         margin: 0;
         border-bottom: 1px solid $color-white;
-        background: $bg-gradient;
+        background: $color-black;
+        @include transition(0.3s);
+        &:hover {
+          background: $bg-gradient;
+        }
         &:last-child {
           border-bottom: unset;
+          a {
+            font-size: 20px;
+          }
         }
         a {
           color: $color-white;
           font-size: 20px;
+          text-decoration: none;
+          padding: 6px 12px;
         }
       }
     }
@@ -188,20 +195,24 @@ main {
       display: flex;
       margin-bottom: 100px;
       .infos-container {
-        background-color: $color-bg-grey;
+        background: $bg-gradient;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: baseline;
+        p {
+          color: $color-white;
+        }
         h4 {
-          color: $color-blue-1;
+          color: $color-white;
           font-size: 32px;
         }
         h5 {
           font-size: 18px;
+          color: $color-white;
           a {
-            color: $color-blue-1;
-            text-decoration: none;
+            color: $color-white;
+            text-decoration: underline;
             font-size: 18px;
             &:hover {
               font-weight: bold;
@@ -210,8 +221,8 @@ main {
         }
         .technologies {
           span {
-            background-color: $color-black;
-            color: $color-white;
+            background-color: $color-white;
+            color: $color-black;
             @include transition(0.3s);
             padding: 4px 8px;
             font-weight: bold;
@@ -221,13 +232,20 @@ main {
               margin-right: 0;
             }
             &:hover {
-              background: $bg-gradient;
+              background-color: $color-black;
               border-radius: 18px;
+              color: $color-white;
             }
           }
         }
-        a {
+        a.btn-style {
           margin-top: 30px;
+          background-color: $color-white;
+          color: $color-black;
+          &:hover {
+            background: $color-black;
+            color: $color-white;
+          }
         }
         .btn-container {
           a {
