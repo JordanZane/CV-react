@@ -9,8 +9,8 @@ const Projects = () => {
         <div className="col-lg-12">
           <h2 className="hidden">Projets</h2>
           <ProjectsInsert />
-          <div className="btn-container">
-            <Link className="btn-style hidden" to="/projects">
+          <div className="btn-container hidden">
+            <Link className="btn-style" to="/projects">
               Tous mes projets
             </Link>
           </div>
