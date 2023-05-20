@@ -44,6 +44,10 @@ body {
     color: $color-blue-1;
     position: relative;
     margin-bottom: 50px;
+    transform: translate(0, -50px);
+    &.show {
+      transform: translate(0, 0);
+    }
     &::after {
       content: '';
       position: absolute;
@@ -163,7 +167,7 @@ body {
 .hidden {
   opacity: 0;
   filter: blur(5px);
-  @include transition(0.8s);
+  @include transition(1.2s);
 }
 
 .show {

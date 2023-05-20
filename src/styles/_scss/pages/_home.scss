@@ -104,6 +104,11 @@ main {
     }
   }
   .front-end-skills {
+    transform: translate(0, 100px);
+    @include transition(1.2s);
+    &.show {
+      transform: translate(0, 0);
+    }
     &:hover {
       h3 i {
         animation: rotate3DY 0.6s linear infinite alternate forwards;
@@ -111,6 +116,11 @@ main {
     }
   }
   .tools-skills {
+    transform: translate(0, 150px);
+    @include transition(1.6s);
+    &.show {
+      transform: translate(0, 0);
+    }
     &:hover {
       h3 i {
         animation: rotate360 1.5s linear infinite forwards;
@@ -119,6 +129,11 @@ main {
   }
 
   .others-skills {
+    transform: translate(0, 200px);
+    @include transition(2s);
+    &.show {
+      transform: translate(0, 0);
+    }
     &:hover {
       h3 i {
         animation: writing 1.5s linear infinite alternate forwards;
