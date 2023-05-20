@@ -4,6 +4,7 @@ import Skills from '../Skills';
 import Projects from '../Projects';
 import Navigation from '../Navigation';
 import Header from '../Header';
+import Footer from '../Footer';
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
       <Banner />
       <Skills />
       <Projects />
-      <div id="contact"></div>
+      <Footer />
     </main>
   );
 };

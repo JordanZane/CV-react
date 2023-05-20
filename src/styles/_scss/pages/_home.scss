@@ -133,3 +133,37 @@
     transform: translateX(-10px);
   }
 }
+
+.projects-section {
+  .projects-container {
+    padding-left: 0;
+    li {
+      display: flex;
+      margin-bottom: 30px;
+      .infos-container {
+        background-color: $color-bg-grey;
+        h4 {
+          color: $color-blue-1;
+          font-size: 32px;
+        }
+        h5 {
+          font-size: 18px;
+        }
+      }
+      &.project-odd {
+        .infos-container {
+          padding: 10px 30px 30px 50px;
+        }
+      }
+      &.project-even {
+        .infos-container {
+          padding: 10px 50px 30px 30px;
+        }
+      }
+    }
+  }
+  .btn-container {
+    text-align: center;
+    margin-top: 75px;
+  }
+}
