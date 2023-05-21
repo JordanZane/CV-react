@@ -14,13 +14,25 @@
       height: 5px;
     }
   }
+  h2 {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 100px;
+    &::after {
+      content: unset;
+    }
+  }
   .projects-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    li {
+    margin: 0;
+    .project {
       width: 45%;
-      margin: 30px;
+      margin: 0 30px 30px 30px;
+    }
+    li {
       list-style-type: none;
       .img-container {
         position: relative;

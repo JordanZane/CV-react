@@ -1,19 +1,23 @@
 import React from 'react';
-import lalojaImage from '../../assets/images/projects/laloja.jpg';
-import fermePetellesImage from '../../assets/images/projects/fermedespetelles.jpg';
-import centreTherapieManuelle from '../../assets/images/projects/centretherapiemanuelle.jpg';
-import bobsBurgerWorld from '../../assets/images/projects/bobsburgerworld.jpg';
-import ilpizzico from '../../assets/images/projects/ilpizzico.jpg';
-import CentreFormationReflexologie from '../../assets/images/projects/centre-formation-reflexologie.jpg';
-import DuckList from '../../assets/images/projects/duck-list.jpg';
-import InstantWeather from '../../assets/images/projects/instant-weather.jpg';
-import Janken from '../../assets/images/projects/janken.jpg';
-import O3Architecture from '../../assets/images/projects/o3-architecture.jpg';
-import Efitax from '../../assets/images/projects/efitax.jpg';
+import ProProjectsInserts from '../ProProjectsInserts';
+import PersoProjectsInserts from '../PersoProjectsInserts';
 
 const ProjectsPageInserts = ({ showProProjects }) => {
   return (
-    <ul className="projects-container">
+    <div>
+      {showProProjects === null && (
+        <div>
+          <ProProjectsInserts />
+          <PersoProjectsInserts />
+        </div>
+      )}
+
+      {showProProjects === true && <ProProjectsInserts />}
+
+      {showProProjects === false && <PersoProjectsInserts />}
+    </div>
+
+    /*<ul className="projects-container">
       <li
         className={`project hidden project-pro ${
           showProProjects ? '' : 'd-none'
@@ -558,7 +562,7 @@ const ProjectsPageInserts = ({ showProProjects }) => {
           </a>
         </div>
       </li>
-    </ul>
+    </ul>*/
   );
 };
 //

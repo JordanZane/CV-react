@@ -4,9 +4,7 @@ import ProjectsPageInserts from '../ProjectsPageInserts';
 import ScrollAnim from '../ScrollAnim/scrollanim';
 
 const ProjectsPage = () => {
-  const [showProProject, setShowProject] = useState(false);
-  const proProjects = document.querySelectorAll('.project-pro');
-  const persoProjects = document.querySelectorAll('.project-perso');
+  const [showProProject, setShowProject] = useState(null);
 
   const handleProBtnClick = () => {
     setShowProject(true);
@@ -18,12 +16,6 @@ const ProjectsPage = () => {
 
   const handleAllClick = () => {
     setShowProject(null);
-    proProjects.forEach((proProject) => {
-      proProject.classList.remove('d-none');
-    });
-    persoProjects.forEach((persoProject) => {
-      persoProject.classList.remove('d-none');
-    });
   };
 
   window.addEventListener('load', function () {});
@@ -44,7 +36,11 @@ const ProjectsPage = () => {
             <nav>
               <ul>
                 <li>
-                  <button onClick={handleAllClick} id="all-btn">
+                  <button
+                    onClick={handleAllClick}
+                    id="all-btn"
+                    className={showProProject === null ? 'active' : ''}
+                  >
                     Tous
                   </button>
                 </li>
@@ -61,7 +57,7 @@ const ProjectsPage = () => {
                   <button
                     onClick={handlePersoBtnClick}
                     id="perso-btn"
-                    className={!showProProject ? 'active' : ''}
+                    className={showProProject === false ? 'active' : ''}
                   >
                     Personnels
                   </button>
