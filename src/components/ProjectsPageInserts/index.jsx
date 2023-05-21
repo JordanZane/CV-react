@@ -11,10 +11,14 @@ import Janken from '../../assets/images/projects/janken.jpg';
 import O3Architecture from '../../assets/images/projects/o3-architecture.jpg';
 import Efitax from '../../assets/images/projects/efitax.jpg';
 
-const ProjectsPageInserts = () => {
+const ProjectsPageInserts = ({ showProProjects }) => {
   return (
     <ul className="projects-container">
-      <li className="project hidden project-pro">
+      <li
+        className={`project hidden project-pro ${
+          showProProjects ? '' : 'd-none'
+        }`}
+      >
         <div className="img-container">
           <img src={lalojaImage} alt="La Loja" />
           <a target="_blank" rel="noreferrer" href="https://laloja.be/">
@@ -58,7 +62,11 @@ const ProjectsPageInserts = () => {
           </a>
         </div>
       </li>
-      <li className="project hidden project-pro">
+      <li
+        className={`project hidden project-pro ${
+          showProProjects ? '' : 'd-none'
+        }`}
+      >
         <div className="img-container">
           <img src={fermePetellesImage} alt="Ferme des Pételles" />
           <a
@@ -106,7 +114,11 @@ const ProjectsPageInserts = () => {
           </a>
         </div>
       </li>
-      <li className="project hidden project-pro">
+      <li
+        className={`project hidden project-pro ${
+          showProProjects ? '' : 'd-none'
+        }`}
+      >
         <div className="img-container">
           <img src={centreTherapieManuelle} alt="Centre de Therapie Manuelle" />
           <a
@@ -154,7 +166,11 @@ const ProjectsPageInserts = () => {
           </a>
         </div>
       </li>
-      <li className="project hidden project-perso">
+      <li
+        className={`project hidden project-perso ${
+          showProProjects ? 'd-none' : ''
+        }`}
+      >
         <div className="img-container">
           <img src={bobsBurgerWorld} alt="Bob's Burger World" />
           <a
@@ -201,7 +217,11 @@ const ProjectsPageInserts = () => {
           </div>
         </div>
       </li>
-      <li className="project hidden project-pro">
+      <li
+        className={`project hidden project-pro ${
+          showProProjects ? '' : 'd-none'
+        }`}
+      >
         <div className="img-container">
           <img src={ilpizzico} alt="Ilpizzico" />
           <a
@@ -250,7 +270,11 @@ const ProjectsPageInserts = () => {
           </a>
         </div>
       </li>
-      <li className="project hidden project-pro">
+      <li
+        className={`project hidden project-pro ${
+          showProProjects ? '' : 'd-none'
+        }`}
+      >
         <div className="img-container">
           <img src={CentreFormationReflexologie} alt="Académie du Bien-Être" />
           <a
@@ -298,7 +322,11 @@ const ProjectsPageInserts = () => {
           </a>
         </div>
       </li>
-      <li className="project hidden project-perso">
+      <li
+        className={`project hidden project-perso ${
+          showProProjects ? 'd-none' : ''
+        }`}
+      >
         <div className="img-container">
           <img src={DuckList} alt="Duck List" />
           <a
@@ -332,7 +360,11 @@ const ProjectsPageInserts = () => {
           </a>
         </div>
       </li>
-      <li className="project hidden project-perso">
+      <li
+        className={`project hidden project-perso ${
+          showProProjects ? 'd-none' : ''
+        }`}
+      >
         <div className="img-container">
           <img src={InstantWeather} alt="Instant Weather" />
           <a
@@ -377,7 +409,11 @@ const ProjectsPageInserts = () => {
           </div>
         </div>
       </li>
-      <li className="project hidden project-perso">
+      <li
+        className={`project hidden project-perso ${
+          showProProjects ? 'd-none' : ''
+        }`}
+      >
         <div className="img-container">
           <img src={Janken} alt="Janken Game" />
           <a
@@ -421,7 +457,11 @@ const ProjectsPageInserts = () => {
           </div>
         </div>
       </li>
-      <li className="project hidden project-pro">
+      <li
+        className={`project hidden project-pro ${
+          showProProjects ? '' : 'd-none'
+        }`}
+      >
         <div className="img-container">
           <img src={O3Architecture} alt="O3-Architecture" />
           <a
@@ -470,7 +510,11 @@ const ProjectsPageInserts = () => {
           </a>
         </div>
       </li>
-      <li className="project hidden project-pro">
+      <li
+        className={`project hidden project-pro ${
+          showProProjects ? '' : 'd-none'
+        }`}
+      >
         <div className="img-container">
           <img src={Efitax} alt="Efitax" />
           <a target="_blank" rel="noreferrer" href="https://www.efitax.lu/fr">
