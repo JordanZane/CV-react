@@ -9,6 +9,16 @@ const ProjectsPage = () => {
     const persoProjects = document.querySelectorAll('.project-perso');
     const proBtn = document.querySelector('#pro-btn');
     const persoBtn = document.querySelector('#perso-btn');
+    const allBtn = document.querySelector('#all-btn');
+
+    allBtn.addEventListener('click', function () {
+      for (let i = 0; i < proProjects.length; i++) {
+        proProjects[i].classList.remove('d-none');
+      }
+      for (let i = 0; i < persoProjects.length; i++) {
+        persoProjects[i].classList.remove('d-none');
+      }
+    });
 
     proBtn.addEventListener('click', function () {
       for (let i = 0; i < proProjects.length; i++) {
@@ -44,6 +54,9 @@ const ProjectsPage = () => {
             <h1>Mes projets</h1>
             <nav>
               <ul>
+                <li>
+                  <button id="all-btn">Tous</button>
+                </li>
                 <li>
                   <button id="pro-btn">Professionnels</button>
                 </li>
