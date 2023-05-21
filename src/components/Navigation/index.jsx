@@ -62,7 +62,9 @@ const Navigation = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="icon-burger-container">
-              <i className="fa-solid fa-bars"></i>
+              <button id="btn-sm-nav">
+                <i className="fa-solid fa-bars"></i>
+              </button>
             </div>
             <ul>
               <li>

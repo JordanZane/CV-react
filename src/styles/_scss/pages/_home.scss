@@ -52,6 +52,7 @@ main {
     align-items: center;
     @include respond-to('xsmall') {
       flex-direction: column;
+      text-align: center;
     }
     p {
       font-size: 26px;
@@ -297,7 +298,10 @@ main {
         box-shadow: 4px 4px 6px #adadad;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        transform: translate(-50px, 0);
+        transform: translate(-150px, 0);
+        @include respond-to('xlarge') {
+          transform: translate(-50px, 0);
+        }
         @include respond-to('small') {
           transform: translate(0, 25px);
         }
@@ -317,7 +321,10 @@ main {
         box-shadow: -4px 4px 6px #adadad;
         border-top-left-radius: 18px;
         border-bottom-left-radius: 18px;
-        transform: translate(50px, 0);
+        transform: translate(150px, 0);
+        @include respond-to('xlarge') {
+          transform: translate(50px, 0);
+        }
         @include respond-to('large') {
           flex-direction: column-reverse;
         }

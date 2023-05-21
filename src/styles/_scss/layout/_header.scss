@@ -3,6 +3,7 @@ header {
   position: relative;
   @include respond-to('xsmall') {
     height: unset;
+    margin-top: 100px;
   }
   .header-content {
     position: absolute;
@@ -48,6 +49,7 @@ nav.nav {
     z-index: -1;
     position: relative;
   }
+
   .icon-burger-container {
     display: none;
     text-align: center;
@@ -59,6 +61,10 @@ nav.nav {
       font-size: 26px;
       color: $color-blue-1;
     }
+    #btn-sm-nav {
+      border: unset;
+      background: unset;
+    }
   }
   ul {
     display: flex;
@@ -69,6 +75,7 @@ nav.nav {
       align-items: center;
       opacity: 0;
       transform: translate(0, -150px);
+      position: absolute;
     }
     li {
       margin-right: 30px;
