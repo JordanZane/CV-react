@@ -33,7 +33,7 @@ const ProjectsPage = () => {
         <div className="row">
           <div className="col-lg-12">
             <h1>Mes projets</h1>
-            <nav>
+            <nav className="nav-projects">
               <ul>
                 <li>
                   <button

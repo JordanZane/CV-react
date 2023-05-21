@@ -23,6 +23,29 @@
       content: unset;
     }
   }
+  .nav-projects {
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        list-style-type: none;
+        button {
+          color: $color-white;
+          background: $color-black;
+          padding: 8px 16px;
+          border: unset;
+          font-size: 18px;
+          font-weight: bold;
+          &.active {
+            background: $bg-gradient;
+          }
+          &:hover {
+            background: $bg-gradient;
+          }
+        }
+      }
+    }
+  }
   .projects-container {
     display: flex;
     justify-content: center;
