@@ -47,11 +47,25 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include respond-to('xsmall') {
+      flex-direction: column;
+    }
     p {
       font-size: 26px;
       line-height: 32px;
       color: $color-white;
       font-weight: bold;
+      @include respond-to('medium') {
+        font-size: 20px;
+        line-height: 26px;
+      }
+      @include respond-to('small') {
+        font-size: 16px;
+        line-height: 22px;
+      }
+      @include respond-to('xsmall') {
+        margin-bottom: 30px;
+      }
     }
     .btn-style {
       background-color: $color-white;
@@ -107,6 +121,9 @@ main {
         font-weight: bold;
         font-size: 20px;
         @include transition(0.5s);
+        @include respond-to('small') {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -203,6 +220,10 @@ main {
         flex-direction: column;
         justify-content: space-between;
         align-items: baseline;
+        @include respond-to('large') {
+          align-items: center;
+          text-align: center;
+        }
         p {
           color: $color-white;
         }
@@ -240,6 +261,12 @@ main {
               color: $color-white;
             }
           }
+          strong {
+            @include respond-to('small') {
+              display: inline-block;
+              margin-bottom: 15px;
+            }
+          }
         }
         a.btn-style {
           margin-top: 30px;
@@ -251,6 +278,10 @@ main {
           }
         }
         .btn-container {
+          @include respond-to('xsmall') {
+            display: flex;
+            flex-direction: column;
+          }
           a {
             margin-right: 30px;
           }
@@ -261,6 +292,9 @@ main {
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
         transform: translate(-50px, 0);
+        @include respond-to('small') {
+          transform: translate(0, 25px);
+        }
         &.show {
           transform: translate(0, 0);
         }
@@ -277,6 +311,9 @@ main {
         transform: translate(50px, 0);
         @include respond-to('large') {
           flex-direction: column-reverse;
+        }
+        @include respond-to('small') {
+          transform: translate(0, 25px);
         }
         &.show {
           transform: translate(0, 0);

@@ -24,15 +24,19 @@ body {
     position: relative;
     padding: 40px 0;
     transform: translate(0, -50px);
-    color: $color-blue-1;
     &.show {
       transform: translate(0, 0);
     }
     @include respond-to('medium') {
-      font-size: 30px;
+      font-size: 58px;
     }
     @include respond-to('small') {
-      font-size: 25px;
+      font-size: 38px;
+      line-height: 52px;
+    }
+    @include respond-to('xsmall') {
+      font-size: 28px;
+      line-height: 42px;
     }
   }
 
@@ -59,10 +63,7 @@ body {
       background-color: $color-blue-1;
     }
     @include respond-to('medium') {
-      font-size: 25px;
-    }
-    @include respond-to('small') {
-      font-size: 20px;
+      font-size: 38px;
     }
   }
 
@@ -72,6 +73,9 @@ body {
     font-weight: 700;
     line-height: 28px;
     padding: 25px 0 18px;
+    @include respond-to('medium') {
+      font-size: 26px;
+    }
     @include respond-to('small') {
       font-size: 22px;
       margin: 4px 0;
@@ -141,6 +145,10 @@ body {
   padding: 8px 22px;
   font-size: 18px;
   text-decoration: unset;
+  @include respond-to('xsmall') {
+    font-size: 16px;
+    padding: 4px 16px;
+  }
   @include transition(0.3s);
   &:hover {
     color: $color-white;

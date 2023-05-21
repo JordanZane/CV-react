@@ -28,6 +28,7 @@
   h1 {
     text-align: center;
     position: relative;
+    color: $color-blue-1;
     &::after {
       content: '';
       position: absolute;
