@@ -7,6 +7,7 @@ import ScrollAnim from './components/ScrollAnim/scrollanim';
 function App() {
   return (
     <BrowserRouter>
+      <div id="top-page"></div>
       <ScrollAnim />
       <Routes>
         <Route path="/" element={<Home />}></Route>

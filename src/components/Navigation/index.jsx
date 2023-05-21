@@ -33,6 +33,12 @@ const Navigation = () => {
         }
       });
 
+      // Vérification supplémentaire pour activer le lien "Accueil" (#top-page)
+      const pageOffset = window.pageYOffset;
+      if (pageOffset < 100 && activeLinkId !== '#top-page') {
+        activeLinkId = '#top-page';
+      }
+
       setActiveLink(activeLinkId);
     };
 
