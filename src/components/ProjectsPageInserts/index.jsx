@@ -7,7 +7,7 @@ import bobsBurgerWorld from '../../assets/images/projects/bobsburgerworld.jpg';
 const ProjectsPageInserts = () => {
   return (
     <ul className="projects-container">
-      <li className="project-odd hidden">
+      <li className="project hidden">
         <div className="img-container">
           <img src={lalojaImage} alt="La Loja" />
           <a target="_blank" rel="noreferrer" href="https://laloja.be/">
@@ -51,7 +51,17 @@ const ProjectsPageInserts = () => {
           </a>
         </div>
       </li>
-      <li className="project-even hidden">
+      <li className="project hidden">
+        <div className="img-container">
+          <img src={fermePetellesImage} alt="Ferme des Pételles" />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://fermedespetelles.be/"
+          >
+            <i className="fa-solid fa-eye"></i>
+          </a>
+        </div>
         <div className="infos-container">
           <h4>Ferme des Pételles</h4>
           <h5>
@@ -88,18 +98,8 @@ const ProjectsPageInserts = () => {
             Visiter le site
           </a>
         </div>
-        <div className="img-container">
-          <img src={fermePetellesImage} alt="Ferme des Pételles" />
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://fermedespetelles.be/"
-          >
-            <i className="fa-solid fa-eye"></i>
-          </a>
-        </div>
       </li>
-      <li className="project-odd hidden">
+      <li className="project hidden">
         <div className="img-container">
           <img src={centreTherapieManuelle} alt="Centre de Therapie Manuelle" />
           <a
@@ -147,7 +147,17 @@ const ProjectsPageInserts = () => {
           </a>
         </div>
       </li>
-      <li className="project-even hidden">
+      <li className="project hidden">
+        <div className="img-container">
+          <img src={bobsBurgerWorld} alt="Bob's Burger World" />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://bobsburgerworld.jordanzanetti.fr/"
+          >
+            <i className="fa-solid fa-eye"></i>
+          </a>
+        </div>
         <div className="infos-container">
           <h4>Bob's Burger World</h4>
           <h5>Projet personnel</h5>
@@ -182,16 +192,6 @@ const ProjectsPageInserts = () => {
               Voir le code
             </a>
           </div>
-        </div>
-        <div className="img-container">
-          <img src={bobsBurgerWorld} alt="Bob's Burger World" />
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://bobsburgerworld.jordanzanetti.fr/"
-          >
-            <i className="fa-solid fa-eye"></i>
-          </a>
         </div>
       </li>
     </ul>
