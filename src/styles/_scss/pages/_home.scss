@@ -194,6 +194,9 @@ main {
     li {
       display: flex;
       margin-bottom: 100px;
+      @include respond-to('large') {
+        flex-direction: column;
+      }
       .infos-container {
         background: $bg-gradient;
         display: flex;
@@ -257,7 +260,7 @@ main {
         box-shadow: 4px 4px 6px #adadad;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        transform: translate(-250px, 0);
+        transform: translate(-50px, 0);
         &.show {
           transform: translate(0, 0);
         }
@@ -271,7 +274,10 @@ main {
         box-shadow: -4px 4px 6px #adadad;
         border-top-left-radius: 18px;
         border-bottom-left-radius: 18px;
-        transform: translate(250px, 0);
+        transform: translate(50px, 0);
+        @include respond-to('large') {
+          flex-direction: column-reverse;
+        }
         &.show {
           transform: translate(0, 0);
         }
@@ -293,8 +299,14 @@ main {
             height: 100%;
             background-color: rgba(0, 0, 0, 39%);
           }
+
           i {
             opacity: 1;
+          }
+        }
+        img {
+          @include respond-to('large') {
+            width: 100%;
           }
         }
         i {

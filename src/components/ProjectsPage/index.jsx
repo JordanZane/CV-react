@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AsideLinks from '../AsideLinks';
 import ProjectsPageInserts from '../ProjectsPageInserts';
 import ScrollAnim from '../ScrollAnim/scrollanim';
+import { Link } from 'react-router-dom';
 
 const ProjectsPage = () => {
   const [showProProject, setShowProject] = useState(null);
@@ -30,11 +31,12 @@ const ProjectsPage = () => {
       <ScrollAnim />
       <AsideLinks />
       <div id="home-link">
-        <a href="/">
+        <Link to="/">
           <i className="fa-solid fa-house"></i>
           <span>Accueil</span>
-        </a>
+        </Link>
       </div>
+
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
