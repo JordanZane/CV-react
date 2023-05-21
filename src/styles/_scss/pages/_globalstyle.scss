@@ -24,6 +24,8 @@ body {
     position: relative;
     padding: 40px 0;
     transform: translate(0, -50px);
+    color: $color-blue-1;
+
     &.show {
       transform: translate(0, 0);
     }
