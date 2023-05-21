@@ -1,6 +1,15 @@
 import React from 'react';
 
 const Header = () => {
+  const handleLinkClick = (event) => {
+    event.preventDefault();
+
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header id="top-page">
       <div className="container">
@@ -12,8 +21,12 @@ const Header = () => {
                 <span>Développeur web front-end</span>
               </h1>
               <div className="btn-container hidden">
-                <a className="btn-style " href="#contact">
-                  Contactez moi
+                <a
+                  className="btn-style"
+                  href="#projects"
+                  onClick={handleLinkClick}
+                >
+                  Mes projets
                 </a>
               </div>
             </div>
