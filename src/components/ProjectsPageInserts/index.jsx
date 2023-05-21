@@ -3,6 +3,8 @@ import lalojaImage from '../../assets/images/projects/laloja.jpg';
 import fermePetellesImage from '../../assets/images/projects/fermedespetelles.jpg';
 import centreTherapieManuelle from '../../assets/images/projects/centretherapiemanuelle.jpg';
 import bobsBurgerWorld from '../../assets/images/projects/bobsburgerworld.jpg';
+import ilpizzico from '../../assets/images/projects/ilpizzico.jpg';
+import CentreFormationReflexologie from '../../assets/images/projects/centre-formation-reflexologie.jpg';
 
 const ProjectsPageInserts = () => {
   return (
@@ -192,6 +194,103 @@ const ProjectsPageInserts = () => {
               Voir le code
             </a>
           </div>
+        </div>
+      </li>
+      <li className="project hidden">
+        <div className="img-container">
+          <img src={ilpizzico} alt="Ilpizzico" />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.ilpizzico.lu/fr"
+          >
+            <i className="fa-solid fa-eye"></i>
+          </a>
+        </div>
+        <div className="infos-container">
+          <h4>Ilpizzico</h4>
+          <h5>
+            Projet professionnel - Réalisé chez :{' '}
+            <a
+              href="https://www.intermediatic.com/fr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Intermediatic
+            </a>
+          </h5>
+          <p>
+            <strong>Site vitrine - </strong>
+            Réalisé sur
+            <strong> CMS d'entreprise</strong>
+          </p>
+          <p>
+            <strong>Mon rôle : </strong>Configuration des modules. Intégration
+            de la maquette. Traitement & optimisation des images
+          </p>
+          <p className="technologies">
+            <strong>Technologies :</strong> <span>Html5</span>
+            <span>Sass</span>
+            <span>BootStrap</span>
+            <span>JavaScript</span>
+            <span>Photoshop</span>
+          </p>
+          <a
+            className="btn-style"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.ilpizzico.lu/fr"
+          >
+            Visiter le site
+          </a>
+        </div>
+      </li>
+      <li className="project hidden">
+        <div className="img-container">
+          <img src={CentreFormationReflexologie} alt="Ilpizzico" />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.academiedubienetre.be/fr/accueil"
+          >
+            <i className="fa-solid fa-eye"></i>
+          </a>
+        </div>
+        <div className="infos-container">
+          <h4>Ilpizzico</h4>
+          <h5>
+            Projet professionnel - Réalisé chez :{' '}
+            <a
+              href="https://www.intermediatic.com/fr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Intermediatic
+            </a>
+          </h5>
+          <p>
+            <strong>Site vitrine - </strong>
+            Réalisé sur
+            <strong> CMS d'entreprise</strong>
+          </p>
+          <p>
+            <strong>Mon rôle : </strong>Configuration des modules. Intégration
+            de la maquette. Traitement & optimisation des images
+          </p>
+          <p className="technologies">
+            <strong>Technologies :</strong> <span>Html5</span>
+            <span>Sass</span>
+            <span>BootStrap</span>
+            <span>Photoshop</span>
+          </p>
+          <a
+            className="btn-style"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.academiedubienetre.be/fr/accueil"
+          >
+            Visiter le site
+          </a>
         </div>
       </li>
     </ul>
