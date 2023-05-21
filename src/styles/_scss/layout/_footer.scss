@@ -16,6 +16,9 @@ footer#contact {
       i {
         font-size: 48px;
         padding-bottom: 20px;
+        @include respond-to('medium') {
+          margin-bottom: 30px;
+        }
       }
       span {
         @include respond-to('medium') {

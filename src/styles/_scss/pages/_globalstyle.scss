@@ -86,7 +86,7 @@ body {
   h4 {
     font-family: $font1;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 32px;
     font-weight: 700;
     padding: 20px 0;
     @include respond-to('small') {
@@ -137,6 +137,9 @@ body {
 
 .section {
   margin-bottom: 340px;
+  @include respond-to('small') {
+    margin-bottom: 140px;
+  }
 }
 
 .btn-style {
