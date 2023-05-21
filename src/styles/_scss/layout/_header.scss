@@ -11,7 +11,7 @@ header {
         color: $color-blue-1;
       }
     }
-    a {
+    .btn-container {
       transform: translate(-50px, 0);
       display: inline-block;
       &.show {

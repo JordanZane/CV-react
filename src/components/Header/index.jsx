@@ -14,9 +14,11 @@ const Header = () => {
                 Zanetti Jordan <br />
                 <span>Développeur web front-end</span>
               </h1>
-              <a className="btn-style hidden" href="#contact">
-                Contactez moi
-              </a>
+              <div className="btn-container hidden">
+                <a className="btn-style " href="#contact">
+                  Contactez moi
+                </a>
+              </div>
             </div>
           </div>
         </div>
