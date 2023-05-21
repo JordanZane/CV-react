@@ -5,6 +5,9 @@ main {
     right: 0;
     top: 100px;
     z-index: 1;
+    @include respond-to('xsmall') {
+      display: none;
+    }
     ul.links-container {
       display: flex;
       flex-direction: column;
@@ -88,7 +91,9 @@ main {
     min-height: 300px;
     box-shadow: 3px 4px 6px $color-blue-1;
     @include transition(0.5s);
-
+    @include respond-to('medium') {
+      margin-bottom: 30px;
+    }
     &:hover {
       border-radius: 18px;
       background: linear-gradient(transparent, transparent);
@@ -224,6 +229,7 @@ main {
           align-items: center;
           text-align: center;
         }
+
         p {
           color: $color-white;
         }
@@ -302,6 +308,9 @@ main {
           padding: 10px 30px 30px 50px;
           border-top-right-radius: 18px;
           border-bottom-right-radius: 18px;
+          @include respond-to('small') {
+            padding: 10px 15px 30px 15px;
+          }
         }
       }
       &.project-even {
@@ -322,6 +331,9 @@ main {
           padding: 10px 50px 30px 30px;
           border-top-left-radius: 18px;
           border-bottom-left-radius: 18px;
+          @include respond-to('small') {
+            padding: 10px 15px 30px 15px;
+          }
         }
       }
       .img-container {
