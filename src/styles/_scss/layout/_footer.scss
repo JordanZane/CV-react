@@ -17,6 +17,11 @@ footer#contact {
         font-size: 48px;
         padding-bottom: 20px;
       }
+      span {
+        @include respond-to('medium') {
+          display: none;
+        }
+      }
     }
     h2 {
       color: $color-white;

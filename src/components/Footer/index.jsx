@@ -8,33 +8,33 @@ const Footer = () => {
           <div className="col-lg-12">
             <div className="contact-container">
               <h2 className="hidden">Contact</h2>
-              <div className="row">
-                <div className="offset-lg-3 col-lg-2 col-sm-12">
+              <div className="row icons-container">
+                <div className="offset-sm-3 col-sm-2">
                   <div className="contact-content hidden">
                     <a href="tel:0666179121">
                       {' '}
                       <i className="fa-solid fa-phone"></i>
-                      06.66.17.91.21
+                      <span>06.66.17.91.21</span>
                     </a>
                   </div>
                 </div>
-                <div className="col-lg-2 col-sm-12">
+                <div className="col-sm-2">
                   <div className="contact-content hidden">
                     <a href="mailto:jzanetti1@outlook.fr">
                       <i className="fa-sharp fa-solid fa-envelope"></i>{' '}
-                      jzanetti1@outlook.fr
+                      <span>jzanetti1@outlook.fr</span>
                     </a>
                   </div>
                 </div>
-                <div className="col-lg-2 col-sm-12">
+                <div className="col-sm-2">
                   <div className="contact-content hidden">
                     <a
                       href="https://www.linkedin.com/in/jordan-zanetti-044ab2174/"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fa-brands fa-linkedin-in"></i> Profil
-                      LinkedIn
+                      <i className="fa-brands fa-linkedin-in"></i>
+                      <span> Profil LinkedIn</span>
                     </a>
                   </div>
                 </div>
