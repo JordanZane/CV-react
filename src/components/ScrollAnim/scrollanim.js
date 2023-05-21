@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 
 const ScrollAnim = () => {
   useEffect(() => {
-    console.log('test');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
