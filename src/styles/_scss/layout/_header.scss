@@ -46,7 +46,6 @@ nav.nav {
   display: flex;
   justify-content: flex-end;
   @include respond-to('xsmall') {
-    z-index: -1;
     position: relative;
   }
 
@@ -70,12 +69,20 @@ nav.nav {
     display: flex;
     justify-content: flex-end;
     padding-left: 0;
+    @include transition(0.3s);
     @include respond-to('xsmall') {
       flex-direction: column;
       align-items: center;
       opacity: 0;
-      transform: translate(0, -150px);
+      transform: translate(-50%, -250px);
+      left: 50%;
       position: absolute;
+    }
+    &.active-nav {
+      position: relative;
+      opacity: 1;
+      transform: translate(-50%, 0);
+      left: 50%;
     }
     li {
       margin-right: 30px;

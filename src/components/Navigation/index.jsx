@@ -56,13 +56,19 @@ const Navigation = () => {
     document.querySelector(link).scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleNav = () => {
+    const listElements = document.querySelector('nav.nav ul');
+    listElements.classList.toggle('active-nav');
+    console.log('click event');
+  };
+
   return (
     <nav className="nav">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <div className="icon-burger-container">
-              <button id="btn-sm-nav">
+              <button onClick={handleNav} id="btn-sm-nav">
                 <i className="fa-solid fa-bars"></i>
               </button>
             </div>
