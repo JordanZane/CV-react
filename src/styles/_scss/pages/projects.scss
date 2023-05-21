@@ -1,5 +1,30 @@
 .projects-page {
   margin-top: 100px;
+  position: relative;
+  #home-link {
+    position: fixed;
+    left: 50px;
+    top: 50%;
+    transform: translate(-50%, 0);
+    a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: $color-blue-1;
+      text-align: center;
+      @include transition(0.3s);
+      &:hover {
+        font-size: 18px;
+        i {
+          font-size: 36px;
+          @include transition(0.3s);
+        }
+      }
+      i {
+        font-size: 32px;
+      }
+    }
+  }
   h1 {
     text-align: center;
     position: relative;

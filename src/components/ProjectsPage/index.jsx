@@ -29,6 +29,12 @@ const ProjectsPage = () => {
     <main className="projects-page">
       <ScrollAnim />
       <AsideLinks />
+      <div id="home-link">
+        <a href="/">
+          <i className="fa-solid fa-house"></i>
+          <span>Accueil</span>
+        </a>
+      </div>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
