@@ -6,6 +6,9 @@
     left: 50px;
     top: 50%;
     transform: translate(-50%, 0);
+    @include respond-to('xsmall') {
+      left: 30px;
+    }
     a {
       display: flex;
       flex-direction: column;
@@ -22,6 +25,11 @@
       }
       i {
         font-size: 32px;
+      }
+      span {
+        @include respond-to('xsmall') {
+          display: none;
+        }
       }
     }
   }
@@ -53,6 +61,7 @@
     ul {
       display: flex;
       justify-content: center;
+      padding-left: 0;
       li {
         list-style-type: none;
         button {
