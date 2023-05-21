@@ -5,9 +5,6 @@ const Header = () => {
     <header id="top-page">
       <div className="container">
         <div className="row">
-          <div className="col-lg-12"></div>
-        </div>
-        <div className="row">
           <div className="col-lg-6">
             <div className="header-content">
               <h1 className="hidden">
