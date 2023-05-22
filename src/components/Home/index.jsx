@@ -7,12 +7,14 @@ import Header from '../Header';
 import Footer from '../Footer';
 import AsideLinks from '../AsideLinks';
 import ScrollAnim from '../ScrollAnim/scrollanim';
+import TopLink from '../TopLink';
 
 const Home = () => {
   return (
     <main>
       <ScrollAnim />
       <Navigation />
+      <TopLink />
       <AsideLinks />
       <Header />
       <Banner />

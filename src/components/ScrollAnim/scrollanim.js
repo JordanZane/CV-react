@@ -16,7 +16,6 @@ const ScrollAnim = () => {
     hiddenElements.forEach((element) => observer.observe(element));
 
     const handlePopstate = () => {
-      // Recharge la page entièrement
       window.location.reload();
     };
 

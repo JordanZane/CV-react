@@ -42,10 +42,8 @@ const Navigation = () => {
       setActiveLink(activeLinkId);
     };
 
-    // Ajoute un écouteur d'événement pour le scroll
     window.addEventListener('scroll', handleScroll);
     return () => {
-      // Nettoie l'écouteur d'événement lorsque le composant est démonté
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
