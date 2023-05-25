@@ -71,6 +71,10 @@
           border: unset;
           font-size: 18px;
           font-weight: bold;
+          @include respond-to('xsmall') {
+            padding: 4px 8px;
+            font-size: 16px;
+          }
           &.active {
             background: $bg-gradient;
           }

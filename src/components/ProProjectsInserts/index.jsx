@@ -9,7 +9,7 @@ import Efitax from '../../assets/images/projects/efitax.jpg';
 
 const ProProjectsInserts = () => {
   return (
-    <div>
+    <>
       <h2>Projets professionnels</h2>
       <ul className="projects-container">
         <li className="project project-pro">
@@ -349,7 +349,7 @@ const ProProjectsInserts = () => {
           </div>
         </li>
       </ul>
-    </div>
+    </>
   );
 };
 

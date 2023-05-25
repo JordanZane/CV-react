@@ -261,6 +261,7 @@ main {
             margin-right: 15px;
             @include respond-to('xsmall') {
               display: inline-block;
+              margin-bottom: 15px;
             }
             &:last-child {
               margin-right: 0;
@@ -315,8 +316,10 @@ main {
           padding: 10px 30px 30px 50px;
           border-top-right-radius: 18px;
           border-bottom-right-radius: 18px;
-          @include respond-to('small') {
+          @include respond-to('large') {
             padding: 10px 15px 30px 15px;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 18px;
           }
         }
       }
