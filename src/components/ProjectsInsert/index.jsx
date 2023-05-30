@@ -3,6 +3,7 @@ import lalojaImage from '../../assets/images/projects/laloja.jpg';
 import fermePetellesImage from '../../assets/images/projects/fermedespetelles.jpg';
 import centreTherapieManuelle from '../../assets/images/projects/centretherapiemanuelle.jpg';
 import bobsBurgerWorld from '../../assets/images/projects/bobsburgerworld.jpg';
+import zQuizz from '../../assets/images/projects/z-quizz.jpg';
 
 const ProjectsInsert = () => {
   return (
@@ -149,27 +150,28 @@ const ProjectsInsert = () => {
       </li>
       <li className="project-even hidden">
         <div className="infos-container">
-          <h4>Bob's Burger World</h4>
+          <h4>Z Quizz</h4>
           <h5>Projet personnel</h5>
           <p>
             <strong>
-              Site d'affichage des informations d'une série télévisée Américaine
-              via une API
+              Application web qui propose une multitude de quizzes classés par
+              catégories
             </strong>
           </p>
 
           <p className="technologies">
             <strong>Technologies :</strong> <span>Html5</span>
             <span>Sass</span>
-            <span>JavaScript</span>
+            <span>BootStrap</span>
             <span>ReactJs</span>
+            <span>API</span>
           </p>
           <div className="btn-container">
             <a
               className="btn-style"
               target="_blank"
               rel="noreferrer"
-              href="https://bobsburgerworld.jordanzanetti.fr/"
+              href="https://z-quizz.jordanzanetti.fr/"
             >
               Visiter le site
             </a>
@@ -177,18 +179,18 @@ const ProjectsInsert = () => {
               className="btn-style"
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/JordanZane/Bobs-Burger-World"
+              href="https://github.com/JordanZane/Z-Quizz"
             >
               Voir le code
             </a>
           </div>
         </div>
         <div className="img-container">
-          <img src={bobsBurgerWorld} alt="Bob's Burger World" />
+          <img src={zQuizz} alt="Z Quizz" />
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://bobsburgerworld.jordanzanetti.fr/"
+            href="https://z-quizz.jordanzanetti.fr/"
           >
             <i className="fa-solid fa-eye"></i>
           </a>
