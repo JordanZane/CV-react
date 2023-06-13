@@ -2,7 +2,6 @@ import React from 'react';
 import lalojaImage from '../../assets/images/projects/laloja.jpg';
 import fermePetellesImage from '../../assets/images/projects/fermedespetelles.jpg';
 import centreTherapieManuelle from '../../assets/images/projects/centretherapiemanuelle.jpg';
-import bobsBurgerWorld from '../../assets/images/projects/bobsburgerworld.jpg';
 import zQuizz from '../../assets/images/projects/z-quizz.jpg';
 
 const ProjectsInsert = () => {

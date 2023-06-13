@@ -1,5 +1,4 @@
 import React from 'react';
-import CvPdf from '../../assets/files/cv-zanetti-jordan.pdf';
 const AsideLinks = () => {
   return (
     <aside>
@@ -24,8 +23,12 @@ const AsideLinks = () => {
           </a>
         </li>
         <li>
-          <a href={CvPdf} download>
-            CV
+          <a
+            target="_blank"
+            href="https://github.com/JordanZane"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-github"></i>
           </a>
         </li>
       </ul>

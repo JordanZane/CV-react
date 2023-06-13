@@ -4,12 +4,62 @@ import DuckList from '../../assets/images/projects/duck-list.jpg';
 import InstantWeather from '../../assets/images/projects/instant-weather.jpg';
 import Janken from '../../assets/images/projects/janken.jpg';
 import zQuizz from '../../assets/images/projects/z-quizz.jpg';
+import Moohvies from '../../assets/images/projects/moohvies.jpg';
 
 const PersoProjectsInserts = () => {
   return (
     <div>
       <h2>Projets personnels</h2>
       <ul className="projects-container">
+        <li className="project project-perso">
+          <div className="img-container">
+            <img src={Moohvies} alt="Moohvies" />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://moohvies.jordanzanetti.fr/"
+            >
+              <i className="fa-solid fa-eye"></i>
+            </a>
+          </div>
+          <div className="infos-container">
+            <h4>Moohvies</h4>
+            <h5>Projet personnel</h5>
+            <p>
+              <strong>
+                Application web permettant de chercher les films sortis en 2023
+                les plus populaires
+              </strong>
+            </p>
+
+            <p className="technologies">
+              <strong>Technologies :</strong> <span>Html5</span>
+              <span>Sass</span>
+              <span>BootStrap</span>
+              <span>ReactJs</span>
+              <span>JavaScript</span>
+              <span>API</span>
+            </p>
+            <div className="btn-container">
+              <a
+                className="btn-style"
+                target="_blank"
+                rel="noreferrer"
+                href="https://moohvies.jordanzanetti.fr/"
+              >
+                Visiter le site
+              </a>
+              <a
+                className="btn-style"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/JordanZane/moohvies"
+              >
+                Voir le code
+              </a>
+            </div>
+          </div>
+        </li>
         <li className="project project-perso">
           <div className="img-container">
             <img src={zQuizz} alt="Z Quizz" />

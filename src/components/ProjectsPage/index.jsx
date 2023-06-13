@@ -22,7 +22,6 @@ const ProjectsPage = () => {
   window.addEventListener('load', function () {});
 
   useEffect(() => {
-    // Scroll to the top of the page
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, []);
 
