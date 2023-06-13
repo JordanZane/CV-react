@@ -134,6 +134,7 @@ const PersoProjectsInserts = () => {
               <span>Sass</span>
               <span>JavaScript</span>
               <span>ReactJs</span>
+              <span>API</span>
             </p>
             <div className="btn-container">
               <a
@@ -213,6 +214,7 @@ const PersoProjectsInserts = () => {
               <strong>Technologies :</strong> <span>Html5</span>
               <span>Sass</span>
               <span>JavaScript</span>
+              <span>API</span>
             </p>
             <div className="btn-container">
               <a
