@@ -5,20 +5,6 @@ import ScrollAnim from '../ScrollAnim/scrollanim';
 import { Link } from 'react-router-dom';
 
 const ProjectsPage = () => {
-  const [showProProject, setShowProject] = useState(null);
-
-  const handleProBtnClick = () => {
-    setShowProject(true);
-  };
-
-  const handlePersoBtnClick = () => {
-    setShowProject(false);
-  };
-
-  const handleAllClick = () => {
-    setShowProject(null);
-  };
-
   window.addEventListener('load', function () {});
 
   useEffect(() => {
@@ -40,38 +26,8 @@ const ProjectsPage = () => {
         <div className="row">
           <div className="col-lg-12">
             <h1>Mes projets</h1>
-            <nav className="nav-projects">
-              <ul>
-                <li>
-                  <button
-                    onClick={handleAllClick}
-                    id="all-btn"
-                    className={showProProject === null ? 'active' : ''}
-                  >
-                    Tous
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={handleProBtnClick}
-                    id="pro-btn"
-                    className={showProProject ? 'active' : ''}
-                  >
-                    Professionnels
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={handlePersoBtnClick}
-                    id="perso-btn"
-                    className={showProProject === false ? 'active' : ''}
-                  >
-                    Personnels
-                  </button>
-                </li>
-              </ul>
-            </nav>
-            <ProjectsPageInserts showProProjects={showProProject} />
+
+            <ProjectsPageInserts />
           </div>
         </div>
       </div>

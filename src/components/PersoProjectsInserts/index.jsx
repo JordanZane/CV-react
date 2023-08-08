@@ -27,8 +27,8 @@ const PersoProjectsInserts = () => {
             <h5>Projet personnel</h5>
             <p>
               <strong>
-                Application web permettant de chercher les films sortis en 2023
-                les plus populaires
+                Application web permettant de chercher les films les plus
+                populaires sortis en 2023
               </strong>
             </p>
 
@@ -37,7 +37,6 @@ const PersoProjectsInserts = () => {
               <span>Sass</span>
               <span>BootStrap</span>
               <span>ReactJs</span>
-              <span>JavaScript</span>
               <span>API</span>
             </p>
             <div className="btn-container">

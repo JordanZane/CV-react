@@ -226,6 +226,7 @@ main {
         flex-direction: column;
         justify-content: space-between;
         align-items: baseline;
+        width: 50%;
         @include respond-to('large') {
           align-items: center;
           text-align: center;
@@ -351,6 +352,7 @@ main {
       }
       .img-container {
         position: relative;
+        width: 50%;
         &:hover {
           &::after {
             content: '';
@@ -367,6 +369,7 @@ main {
           }
         }
         img {
+          width: 100%;
           @include respond-to('large') {
             width: 100%;
           }

@@ -2,19 +2,10 @@ import React from 'react';
 import ProProjectsInserts from '../ProProjectsInserts';
 import PersoProjectsInserts from '../PersoProjectsInserts';
 
-const ProjectsPageInserts = ({ showProProjects }) => {
+const ProjectsPageInserts = () => {
   return (
     <div>
-      {showProProjects === null && (
-        <div>
-          <ProProjectsInserts />
-          <PersoProjectsInserts />
-        </div>
-      )}
-
-      {showProProjects === true && <ProProjectsInserts />}
-
-      {showProProjects === false && <PersoProjectsInserts />}
+      <PersoProjectsInserts />
     </div>
   );
 };
