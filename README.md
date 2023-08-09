@@ -14,13 +14,8 @@ This project contains my online CV as a front-end web developer. It has been cre
 - BootStrap
 
 
-## Contributing
-
-Any contributions are welcome! If you'd like to propose improvements, bug fixes, or new features, please submit a pull request with a detailed description of the changes.
 
 ## Contact
-
-For any questions or suggestions regarding this project, feel free to contact me:
 
 - Email Address: jzanetti1@outlook.fr
 - Website: https://jordanzanetti.fr
