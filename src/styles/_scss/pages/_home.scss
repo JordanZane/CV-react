@@ -299,7 +299,10 @@ main {
             flex-direction: column;
           }
           a {
-            margin-right: 0;
+            margin-right: 15px;
+            @include respond-to('xsmall') {
+              margin-right: 0;
+            }
           }
         }
       }
